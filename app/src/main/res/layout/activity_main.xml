@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="vm"
+            type="com.mobillium.simplemovies.ui.viewmodel.MainViewModel" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:background="@color/bg_color"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+
+        <include
+            android:visibility="gone"
+            android:id="@+id/include_no_internet"
+            layout="@layout/no_internet_connection">
+        </include>
+        <androidx.fragment.app.FragmentContainerView
+            android:id="@+id/fragment"
+            class="androidx.navigation.fragment.NavHostFragment"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:fitsSystemWindows="true"
+            android:tag="fragment_main"
+            app:defaultNavHost="true"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/indicator"
+            app:layout_constraintStart_toStartOf="parent"
+            app:navGraph="@navigation/main_graph" />
+
+
+        <ImageView
+            android:id="@+id/indicator"
+            android:layout_margin="@dimen/unit_10_dp"
+            android:background="@drawable/ic_indicator"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        </ImageView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

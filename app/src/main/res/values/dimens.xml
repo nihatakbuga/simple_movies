@@ -1,0 +1,18 @@
+<resources>
+    <!-- Global Units -->
+    <dimen name="unit_5_dp">5dp</dimen>
+    <dimen name="unit_10_dp">10dp</dimen>
+    <dimen name="unit_15_dp">15dp</dimen>
+    <dimen name="unit_20_dp">20dp</dimen>
+    <dimen name="unit_22_dp">22dp</dimen>
+    <dimen name="unit_25_dp">25dp</dimen>
+    <dimen name="unit_30_dp">30dp</dimen>
+    <dimen name="unit_32_dp">32dp</dimen>
+    <dimen name="unit_40_dp">40dp</dimen>
+    <dimen name="unit_100_dp">100dp</dimen>
+
+
+    <dimen name="size_20sp">20sp</dimen>
+
+
+</resources>

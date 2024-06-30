@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Simple Movies</string>
+    <string name="please_wait">Lütfen Bekleyiniz..</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="no_internet_connection">İnternet bağlantısı yok!</string>
+    <string name="oops">Hata!</string>
+    <string name="not_internet_desc">Lütfen internet bağlantınızı kontrol edin.</string>
+</resources>

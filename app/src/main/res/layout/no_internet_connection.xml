@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:id="@+id/not_image"
+        android:layout_width="wrap_content"
+        android:background="@drawable/ic_not_internet"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_height="wrap_content">
+    </ImageView>
+
+    <TextView
+        android:id="@+id/not_title"
+        android:layout_marginTop="@dimen/unit_30_dp"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/not_image"
+        app:layout_constraintStart_toStartOf="@+id/not_image"
+        app:layout_constraintTop_toBottomOf="@+id/not_image"
+        android:layout_width="wrap_content"
+        android:text="@string/no_internet_connection"
+        android:layout_height="wrap_content">
+    </TextView>
+    <TextView
+        android:layout_marginTop="@dimen/unit_10_dp"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/not_title"
+        app:layout_constraintStart_toStartOf="@+id/not_title"
+        app:layout_constraintTop_toBottomOf="@+id/not_title"
+        android:layout_width="wrap_content"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:text="@string/not_internet_desc"
+        android:layout_height="wrap_content">
+    </TextView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

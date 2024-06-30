@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/bg_color">
+
+        <ImageView
+            android:id="@+id/oops_image"
+            android:layout_width="wrap_content"
+            android:background="@drawable/oops"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_height="wrap_content">
+
+        </ImageView>
+
+        <TextView
+            android:gravity="center"
+            android:paddingEnd="20dp"
+            android:paddingStart="@dimen/unit_20_dp"
+            android:id="@+id/oops_title"
+            android:layout_marginTop="@dimen/unit_30_dp"
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/oops_image"
+            app:layout_constraintStart_toStartOf="@+id/oops_image"
+            app:layout_constraintTop_toBottomOf="@+id/oops_image"
+            android:layout_width="wrap_content"
+            android:text="@string/oops"
+            android:layout_height="wrap_content">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/oops_desc"
+            android:layout_marginTop="@dimen/unit_10_dp"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:paddingStart="@dimen/unit_30_dp"
+            android:paddingEnd="@dimen/unit_30_dp"
+            app:layout_constraintEnd_toEndOf="@+id/oops_title"
+            app:layout_constraintStart_toStartOf="@+id/oops_title"
+            app:layout_constraintTop_toBottomOf="@+id/oops_title"
+            android:layout_width="wrap_content"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:layout_height="wrap_content">
+
+        </TextView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
